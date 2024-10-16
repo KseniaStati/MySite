@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме - Стати Ксения Валерьевна</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .contact-info {
+            background-color: #e9ecef;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .skill {
+            background-color: #007bff;
+            color: white;
+            padding: 5px 10px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+.slider {
+      position: relative;
+      width: 100%;
+      height: 500px;
+    }
+    .slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 1s;
+    }
+    .slide.active {
+      opacity: 1;
+    }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+<img src="https://sun9-21.userapi.com/impg/MDUOseNCWoxx2ToXBthJLoVOqA4LivzTQuf3TA/UFYx5JZe_JU.jpg?size=1215x2160&quality=95&sign=153440526cd0dc63aadb74806927c9dd&type=album" alt="Фото" style="float:right;max-width: 200px;">
+        <h1>Стати Ксения Валерьевна</h1>
+
+    
+  
+        <div class="contact-info">
+            <p>Дата рождения: 4 августа 1994 (30 лет)</p>
+            <p>Телефон: +7 (967) 9180572 (WhatsApp, SMS)</p>
+            <p>Email: statiog@ya.ru</p>
+            <p>Место проживания: Сарапул, Россия</p>
+        </div>
+
+
+
+        <h2>Желаемая должность</h2>
+        <p>Системный администратор</p>
+        <p>Желаемая зарплата: 50 000 ₽</p>
+
+        <h2>Опыт работы</h2>
+        <h3>Ведущий инженер-системотехник</h3>
+        <p>Сарапульский политехнический институт (Декабрь 2022 - настоящее время)</p>
+        <ul>
+            <li>Установка и обслуживание серверов, сетевого оборудования</li>
+            <li>Администрирование учётных записей в домене и в 1С</li>
+            <li>Поддержка пользователей</li>
+            <li>Администрирование и заполнение сайта</li>
+        </ul>
+
+        <h3>Системный администратор</h3>
+        <p>ИП Стати (Июль 2016 - Октябрь 2022)</p>
+
+        <h2>Образование</h2>
+        <p>Магистр, Ижевский государственный технический университет им. М.Т. Калашникова</p>
+        <p>Специальность: Информатика и вычислительная техника, Сети ЭВМ и телекоммуникации</p>
+
+        <h2>Навыки</h2>
+        <div class="skills">
+            <span class="skill">Windows Server</span>
+            <span class="skill">VMware</span>
+            <span class="skill">Linux</span>
+            <span class="skill">Active Directory</span>
+            <span class="skill">Joomla CMS</span>
+            <span class="skill">WordPress</span>
+            <span class="skill">HTML5</span>
+            <span class="skill">Debian</span>
+            <span class="skill">TCP/IP</span>
+            <span class="skill">Domain Name Server</span>
+            <span class="skill">Dynamic Host Control protocol</span>
+            <span class="skill">Kanban</span>
+            <span class="skill">Atlassian Jira</span>
+        </div>
+
+        <h2>Опыт вождения</h2>
+        <p>Имеется собственный автомобиль</p>
+        <p>Права категории B</p>
+
+        <h2>Дополнительная информация</h2>
+        <p>Целеустремлённая, готова к получению новых знаний</p>
+        <p>Разработка, запуск, администрирование и ведение сайта Сарапульской Епархии (в подвале сайта доказательство): <a href="https://сарапулколокол.рф/">https://сарапулколокол.рф/</a></p>
+        <p>Администрирование и ведение сайта института: <a href="https://politehvpo.ru/">https://politehvpo.ru/</a></p>
+
+<div class="text">
+  <p>Я люблю животных. У меня дома живут собака и кошка.</p>
+<p>Всем добра.</p>
+</div>
+<div class="slider">
+  <img src="image1.jpg" alt="Image 1 " class="slide" style="max-width: 400px;">
+  <img src="image2.jpg" alt="Image 2" class="slide" style="max-width: 600px;">
+</div>
+
+<div class="text">
+  <p>Я люблю животных. У меня дома живут собака и кошка.</p>
+</div>
+  <script type="text/javascript">
+let slides = document.querySelectorAll('.slide');
+let currentSlide = 0;
+
+setInterval(() => {
+  slides[currentSlide].classList.remove('active');
+  currentSlide = (currentSlide + 1) % slides.length;
+  slides[currentSlide].classList.add('active');
+}, 30000); // Change the slide every 30 seconds
+ 
+  </script>
+</body>
+</html>
