@@ -127,7 +127,7 @@
 </div>
 <div class="slider">
   <img src="image1.jpg" alt="Image 1 " class="slide" style="max-width: 400px;">
-  <img src="image2.jpg" alt="Image 2" class="slide" style="max-width: 500px;">
+  <img src="image2.jpg" alt="Image 2" class="slide" style="max-width: 400px;">
 </div>
 
 <div class="text">
@@ -138,7 +138,7 @@ let slides = document.querySelectorAll('.slide');
 let currentSlide = 0;
 
 setInterval(() => {
-  slides[currentSlide].classList.remove('active');
+  slides[currentSlide+1].classList.remove('active');
   currentSlide = (currentSlide + 1) % slides.length;
   slides[currentSlide].classList.add('active');
 }, 30000); // Change the slide every 30 seconds
