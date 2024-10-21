@@ -126,7 +126,7 @@
 <p>Всем добра.</p>
 </div>
 <div class="slider">
-  <img src="image1.jpg" alt="Image 1 " class="slide" style="max-width: 400px;">
+  <img src="image1.jpg" alt="Image 1 " class="slide active" style="max-width: 400px;">
   <img src="image2.jpg" alt="Image 2" class="slide" style="max-width: 400px;">
 </div>
 
@@ -135,7 +135,7 @@
 </div>
   <script type="text/javascript">
 let slides = document.querySelectorAll('.slide');
-let currentSlide = 1;
+let currentSlide = 0;
 
 setInterval(() => {
   slides[currentSlide].classList.remove('active');
